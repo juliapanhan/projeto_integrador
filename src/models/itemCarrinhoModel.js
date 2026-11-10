@@ -1,4 +1,4 @@
-const pool = require('../config/database');
+const pool = require('../config/db.js');
 
 const ItemCarrinhoModel = {
     async listarPorCarrinho(carrinhoId) {

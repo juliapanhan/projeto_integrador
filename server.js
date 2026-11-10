@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const produtosRoutes = require('./routes/produtoRoutes');
+const produtosRoutes = require('./src/routes/produtoRoutes');
 
 app.use(express.json());
 
@@ -17,4 +17,4 @@ app.post('/api/login', (req,res) => {
     }
 });
 
-app.listen(3000, () => console.log('Servidor a correr na porta 3000'));
+app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
